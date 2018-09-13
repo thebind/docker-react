@@ -9,6 +9,8 @@
 # production
 /build
 
+secret.txt
+
 # misc
 .DS_Store
 .env.local
