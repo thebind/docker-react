@@ -1,0 +1,9 @@
+sudo: required
+services:
+  - docker
+
+before_install:
+  - docker build -t thebind/docker-react -f Dockerfile.dev .
+
+script:
+  - docker run thebind/docker-react npm run test -- --coverage
